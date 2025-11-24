@@ -19,6 +19,17 @@ Kristaps Ungurs
 https://pictogrammers.com/library/mdi/icon/fish/
 Austin Andrews
 
+https://pictogrammers.com/library/mdi/icon/map-search-outline/
+GreenTurtwig
+
+https://feathericons.com/?query=facebook
+colebemis
+
+https://feathericons.com/?query=instagram
+colebemis
+
+https://pictogrammers.com/library/mdi/icon/pinterest/
+pictogrammers contributors
 
 FONTS:
 
