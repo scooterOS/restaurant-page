@@ -7,16 +7,14 @@ import contactModule from "./contact.js";
     // cache DOM
     const $content = document.getElementById('content');
     const $homeBtn = document.getElementById('home-btn');
-    const $menuBtn = document.getElementById('menuBtn');
-    const $contactBtn = document.getElementById('contactBtn');
+    const $menuBtn = document.getElementById('menu-btn');
+    const $contactBtn = document.getElementById('contact-btn');
   
     // load home page
     homeModule.changeContent($content);
 
     // add event listeners
     $homeBtn.addEventListener('click', () => homeModule.changeContent($content));
-    
-    // UNCOMMENT AFTER FINISHING menu.js AND contact.js RESPECTIVELY
-    //$menuBtn.addEventListener('click', () => menuModule.changeContent($content));
-    //$contactBtn.addEventListener('click', () => contactModule.changeContent($content));
+    $menuBtn.addEventListener('click', () => menuModule.changeContent($content));
+    $contactBtn.addEventListener('click', () => contactModule.changeContent($content));
 })();

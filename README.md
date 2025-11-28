@@ -1,3 +1,6 @@
+DISCLAIMER:
+
+The restaurant "Atlantis Eatery" is a fictional creation used solely for illustrative or educational purposes. Any resemblance to real restaurants, establishments, or persons is purely coincidental. This website is not affiliated with, endorsed by, or connected to any actual restaurant or brand. The menu items, images, and content presented here are entirely imaginary and should not be interpreted as offerings or representations of any real business.
 
 IMAGES:
 
@@ -31,10 +34,24 @@ colebemis
 https://pictogrammers.com/library/mdi/icon/pinterest/
 pictogrammers contributors
 
-FONTS:
+https://pixabay.com/photos/rice-with-seafood-food-seafood-4464793/
+Valsanfox
 
-https://www.fontspace.com/crystal-clear-font-f11107
-No Images
+https://pixabay.com/photos/calamari-deep-fried-marinara-sauce-1045797/
+pixel1
+
+https://pixabay.com/photos/cake-lava-dessert-plate-delicious-5128889/
+romanakr
+
+FONTS:
 
 https://www.fontspace.com/atlantis-famingo-font-f112218
 Letterena Studios
+
+https://fonts.google.com/download/next-steps?preview.text=$18
+Copyright 2023 The Playwrite Project Authors 
+TypeTogether, Veronika Burian, José Scaglione
+
+
+https://pixabay.com/photos/seafood-feast-seafood-feast-1-2495972/
+ 垒 孟 

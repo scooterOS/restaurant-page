@@ -7,6 +7,12 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: 'Playwrite CZ';
+    src: url('../res/fnt/PlaywriteCZ-Regular.woff2') format('woff2');
+    src: url('../res/fnt/PlaywriteCZ-Regular.woff') format('woff');
+}
+
 /* general styles */
 
 * {
@@ -22,6 +28,11 @@
     margin: 0;
 }
 
+:root {
+    --darken: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    --btn-border: 4px solid #290a44;
+}
+
 body {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -29,7 +40,7 @@ body {
 }
 
 #content {
-    background-color: rgb(192, 252, 252);
+    background-color: rgb(175, 212, 236);
     overflow: hidden;
 }
 
@@ -45,6 +56,9 @@ body {
 .bg {
     width: 100vw;
     z-index: -1;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .block {
@@ -77,6 +91,40 @@ body {
     text-shadow: black -1px 2px;
 }
 
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-indent: 0;
+}
+
+.top {
+    justify-content: flex-start;
+    padding-top: 5rem;
+}
+
+.menu {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) -8px -8px;
+    border: 1px solid black;
+    padding: 25px 15px;
+    margin: 20px auto;
+}
+
+.dish {
+    margin: 15px;
+}
+
+.dish h6, li h6 {
+    margin-left: 8px;
+}
+
+.inline * {
+    display: inline;
+}
+
 h1 {
     font-family: 'Atlantis Famigo';
     font-size: 72px;
@@ -90,7 +138,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Noto Sans', 'Open Sans';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
     font-size: 36px;
     margin-bottom: 8px;
 }
@@ -102,25 +150,32 @@ h4 {
 }
 
 h5 {
-    font-family: 'Noto Serif', 'Open Sans';
+    display: inline;
+    font-family: 'Perpetua', 'Noto Serif', 'Open Sans';
     font-size: 24px;
-    font-weight: normal;
 }
 
 h6 {
-    font-family: 'Times New Roman', Times;
+    display: inline;
+    font-family: 'Playwrite CZ';
     font-size: 18px;
     font-weight: normal;
 }
 
-p, button {
-    font-family: 'Helvetica', 'Open Sans';
-    font-size: 22px;
-    margin-bottom: 8px;
+h7 {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p, button, em, li {
+    font-family: 'Perpetua', 'Noto Serif', 'Open Sans';
+    font-size: 24px;
+    margin-bottom: 8px 0;
 }
 
 p {
-    text-indent: 20px;
+    text-indent: 12px;
 }
 
 button {
@@ -129,7 +184,7 @@ button {
 }
 
 em {
-    font-family: inherit;
+    display: inline;
     font-weight: bold;
 }
 
@@ -139,11 +194,9 @@ ul {
 }
 
 li {
-    font-family: 'Helvetica', 'Open Sans';
-    font-size: 24px;
     text-indent: calc(-1 * var(--bullet-size) - 6px);
     padding-left: 6px;
-    margin: 6px 0;
+    margin-top: 8px;
 }
 
 li::before {
@@ -163,6 +216,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+hr {
+  border-top: 2px solid rgb(131, 131, 131);
+  height: 2px;
+  width: 90%;
+  margin: 18px auto;
 }
 
 /* header */
@@ -235,28 +295,14 @@ footer nav * {
     height: 50rem;
     color: #fcfffc;
     text-shadow: #ffcc00 1px 0 10px;
-    text-align: center;
-    text-indent: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
-                url('../res/img/salmon-salad.jpg') no-repeat center;
-    background-size: cover;
-    padding: 40px 0;
+    background-image: var(--darken), url('../res/img/salmon-salad.jpg');
 }
 
 #reservation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 50rem;
     color: #fcfffc;
     text-shadow: #e40098 1px 0 15px;
-    text-align: center;
-    text-indent: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), 
-                url('../res/img/lobster.jpg') no-repeat center;
-    background-size: cover;
-    --btn-border: 4px solid #290a44;
+    background-image: var(--darken), url('../res/img/lobster.jpg');
 }
 
 #reservation button {
@@ -276,4 +322,34 @@ footer nav * {
 
 #reservation button:active {
     background-color: #b35dff;
+}
+
+/* menu tab */
+
+#lunch {
+    height: 15rem;
+    color: #fcfffc;
+    text-shadow: #e4af00 1px 0 15px;
+    background-image: var(--darken), url('../res/img/calamari.jpg');
+}
+
+#dinner {
+    height: 15rem;
+    color: #fcfffc;
+    text-shadow: #e44800 1px 0 15px;
+    background-image: var(--darken), url('../res/img/rice-with-seafood.jpg');
+}
+
+#dessert {
+    height: 15rem;
+    color: #fcfffc;
+    text-shadow: #e40098 1px 0 15px;
+    background-image: var(--darken), url('../res/img/lava-cake.jpg');
+}
+
+#catering {
+    height: 15rem;
+    color: #fcfffc;
+    text-shadow: #00e4be 1px 0 15px;
+    background-image: var(--darken), url('../res/img/seafood-feast.jpg');
 }
