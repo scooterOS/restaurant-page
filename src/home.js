@@ -30,6 +30,7 @@ class Home extends Tab {
                     { 'type': 'li', 'text': 'Private event spaces for celebrations up to 100 guests' },
                     { 'type': 'li', 'text': 'Live ambient music Thursday through Saturday evenings' },
                 ]},
+                { 'type': 'br' },
                 { 'type': 'span', 'classList': ['inline'], 'innerElem': [
                     { 'type': 'p', 'text': `Whether you're seeking a romantic dinner for two, a family celebration, or a 
                        business lunch with a difference, Atlantis Eatery promises an immersive dining journey you won't 
@@ -59,7 +60,7 @@ class Home extends Tab {
             { 'type': 'h1', 'text': 'Location' },
             { 'type': 'a', 'attr': { 'href': "https://www.google.com/maps/@8.5457357,-34.3908544,6.54z?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" }, 
                 'innerElem': [
-                    { 'type': 'h4', 'text': '123 Ocean View, Atlantis City' }
+                    { 'type': 'h4', 'classList': ['map'], 'text': '123 Ocean View, Atlantis City' }
             ]},
         ]},
         ]);

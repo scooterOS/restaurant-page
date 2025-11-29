@@ -169,7 +169,7 @@ class Menu extends Tab {
                 ]},
                 { 'type': 'div', 'classList': ['dish'], 'innerElem': [
                     { 'type': 'h5', 'text': 'Ocean Banquet Dinner' },
-                    { 'type': 'h6', 'text': '$$260' },
+                    { 'type': 'h6', 'text': '$260' },
                     { 'type': 'p', 'text': 'Includes salmon or chicken entrée, mixed greens salad, roasted vegetables, rice pilaf, rolls, dessert bars.' },
                 ]},
                 { 'type': 'div', 'classList': ['dish'], 'innerElem': [
